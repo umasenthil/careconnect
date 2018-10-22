@@ -1,1 +1,9 @@
-<h1>Welcome to Students Page</h1>
+<% @students.each do |student| %>
+  <div>
+    <h1><%= student.FirstName %></h1><br />
+    <i><%= student.LastName %></i><br />
+    <p><%= student.skypeID %></p><br />
+  </div>
+
+  <hr />
+<% end %>
